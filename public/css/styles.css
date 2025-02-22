@@ -1,0 +1,27 @@
+html {
+  background-color: #212529;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+}
+
+#expensesTable {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+th, td {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
