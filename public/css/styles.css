@@ -17,11 +17,3 @@ body {
   max-width: 800px;
   margin: 20px auto;
 }
-
-th, td {
-  text-align: center;
-}
-
-h2 {
-  text-align: center;
-}
