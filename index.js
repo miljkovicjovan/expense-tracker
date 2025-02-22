@@ -28,6 +28,14 @@ app.get("/expenses", async (req, res) => {
   res.json(data);
 });
 
+// GET CATEGORIES
+app.get("/categories", async (req, res) => {
+  const { data, error } = await supabase.from("categories").select("name");
+
+  if (error) return res.status(500).json({ error: error.message });
+  res.json(data);
+});
+
 // POST EXPENSE
 app.post("/expenses", async (req, res) => {
   const { amount, category, description } = req.body;
